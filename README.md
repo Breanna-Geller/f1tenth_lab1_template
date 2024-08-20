@@ -51,7 +51,7 @@ In this lab, it'll be helpful to read these tutorials if you're stuck:
 
 [https://roboticsbackend.com/category/ros2/](https://roboticsbackend.com/category/ros2/)
 
-## 2 Getting ready **(Docker)**
+## 2. Getting ready **(Docker)**
 
 Install Docker on your system following the instructions and
 references:
@@ -227,7 +227,7 @@ If you need multiple terminals and you're inside a Docker container,
 use `tmux`. 
 
 
-## 6: Creating a Package
+## 6. Creating a Package
 
 **Deliverable 1**: create a package named `lab1_pkg` in the workspace
 we created. The package needs to meet these criteria: 
@@ -309,7 +309,7 @@ gordon@f1sim:~/ws/ros_ws/src/lab1_pkg/lab1_pkg$ emacs -nw talker.py #vim/nano/em
 ```
 
 
-## 7: Creating nodes with publishers and subscribers
+## 7. Creating nodes with publishers and subscribers
 
 **Deliverable 2**: create two nodes in the package we just
 created. You can use either `Python` or `C++` for these nodes. 
@@ -332,7 +332,7 @@ meet these criteria:
   via another `AckermannDriveStamped` message to a topic named
   `drive_relay`. 
 
-## 8: Creating a launch file and a parameter file
+## 8. Creating a launch file and a parameter file
 **Deliverable 3**: create a launch file `lab1_launch.py` that launches
 both of the nodes we've created. The `talker` accepts two parameters
 (`v` and `d`) which must be settable on the command line. Set the 
@@ -346,7 +346,7 @@ ros2 launch lab1_launch.py v:=2.0 d:=3.0 # sets v and d parameters
 References to launch files may be found here:
 [https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Creating-Launch-Files.html] 
 
-## 9: ROS 2 commands
+## 9. ROS 2 commands
 
 After you've finished all the deliverables, launch the two nodes and
 test out these ROS 2 commands: 
@@ -360,7 +360,7 @@ ros2 node info talker
 ros2 node info relay
 ```
 
-## 10: Deliverables and Submission
+## 10. Deliverables and Submission
 
 Students will maintain a private gitHub repository, cloning this repo and
 sharing collaboration rights with the TA. In addition to the three
@@ -376,7 +376,7 @@ If you need help, reference the following:
 
 
 
-## 11: Grading Rubric
+## 11. Grading Rubric
 
 - Correctly creating the package: **25** Points
 - Correctly creating the nodes: **25** Points
